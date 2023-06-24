@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-body{
+body {
     background: antiquewhite;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-nav{
+nav {
     font-family: 'Poppins', sans-serif;
 }
 
-nav ul{
+nav ul {
     display: flex;
     /* justify-content: space-between; */
     height: 65px;
@@ -22,26 +22,43 @@ nav ul{
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     padding: 0 12px;
     color: #fff;
 }
 
-.brand{
+.brand {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.brand img{
+.brand img {
     width: 140px;
 }
 
-.container{
-    min-height: 65vh;
+.container {
+    min-height: 58vh;
+    background-color: #000;
+    display: flex;
+    margin: 18px auto;
+    padding: 18px;
+    width: 75%;
+    border-radius: 10px;
+    background-image: url('images/music-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bottom{
+.container h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bottom {
     position: sticky;
     height: 100px;
     background-color: #000;
@@ -50,8 +67,20 @@ nav ul li{
     align-items: center;
     justify-content: center;
     color: white;
+    flex-direction: column;
 }
 
-#myProgressBar{
-    width: 80vw;
+.icons {
+    margin: 15px 0;
+}
+
+.icons i {
+    font-size: 30px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 40vw;
+    height: 5px;
 }
