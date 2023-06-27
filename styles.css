@@ -2,6 +2,7 @@
 
 body {
     background: antiquewhite;
+    font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -40,10 +41,11 @@ nav ul li {
 .container {
     min-height: 58vh;
     background-color: #000;
-    display: flex;
+    /* display: flex; */
+    /* flex-direction: row; */
     margin: 18px auto;
     padding: 18px;
-    width: 75%;
+    width: 85%;
     border-radius: 10px;
     background-image: url('images/music-bg.jpg');
     background-position: center;
@@ -51,11 +53,42 @@ nav ul li {
     background-size: cover;
 }
 
-.container h2 {
+.container .songList h2 {
     font-size: 24px;
     font-weight: 400;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+}
+
+.container .songItem{
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    padding: 8px 0;
+    border-radius: 34px;
+    margin: 12px 0;
+}
+
+.container .songItem img{
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.songItem .songListPlay{
+    display: flex;
+    align-items: center;
+}
+
+.songItem .timeSpan{
+    padding: 0 12px;
+}
+
+.songItem .fa-circle-play{
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .bottom {
@@ -83,4 +116,20 @@ nav ul li {
 #myProgressBar {
     width: 40vw;
     height: 5px;
+}
+
+.bottom .songInfo{
+    position: absolute;
+    left: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.bottom .songInfo img{
+    width: 100px;
+    height: 20px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
