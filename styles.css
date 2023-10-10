@@ -116,6 +116,7 @@ nav ul li {
 #myProgressBar {
     width: 40vw;
     height: 5px;
+    cursor: pointer;
 }
 
 .bottom .songInfo{
